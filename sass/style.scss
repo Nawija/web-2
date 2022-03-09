@@ -1,0 +1,568 @@
+@import "_colors.scss";
+
+*,
+::after,
+::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-size: 1.6rem;
+    background-color: #c9c6c6;
+    font-family: sans-serif;
+}
+.bg-text-img {
+    position: absolute;
+    padding: 10px;
+    width: 68%;
+    height: 60px;
+    top: 86%;
+    left: 50%;
+    border-radius: 9px;
+    transform: translate(-50%, -50%);
+    background-color: black;
+    .title-info-img {
+        display: flex;
+        padding: 5px 0;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 1rem;
+        color: rgb(128, 125, 125);
+    }
+    .title-img {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        // margin-top: 10px;
+        font-size: 1.9rem;
+        color: whitesmoke;
+    }
+}
+nav {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    .logo {
+        text-decoration: none;
+        color: whitesmoke;
+        padding-left: 30px;
+    }
+    .icon-logo-nav {
+        position: absolute;
+        top: 11px;
+        left: 10px;
+        font-size: 1.9rem;
+        color: $button-color;
+    }
+    .burger {
+        border: none;
+        outline: none;
+        background-color: transparent;
+    }
+    .burger-icon {
+        color: $button-color;
+        text-shadow: 3px 3px 5px black;
+        padding: 5px 10px;
+        font-size: 3rem;
+        cursor: pointer;
+    }
+}
+.hero {
+    position: relative;
+    height: 65vh;
+    width: 100%;
+    background-color: black;
+    z-index: 0;
+    span {
+        color: white;
+        text-shadow: 0 0 1px rgb(83, 83, 83);
+    }
+    .bg-span::before {
+        content: " ";
+        position: absolute;
+        margin-top: 8px;
+        width: 159px;
+        height: 15px;
+        background-color: $button-color;
+        z-index: -1;
+    }
+    .ht {
+        text-align: start;
+        color: whitesmoke;
+    }
+    .hero-text {
+        padding: 40px 10%;
+        font-size: 2.5rem;
+        font-weight: bold;
+    }
+    .hero-second-text {
+        padding: 0 10%;
+        margin-bottom: 7%;
+        font-size: 1.2rem;
+        font-weight: 500;
+        color: #585858;
+    }
+    .c-span {
+        color: white;
+    }
+    .hero-info-text {
+        padding: 0 10%;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    span ion-icon {
+        position: absolute;
+        margin-top: -2px;
+        font-size: 2rem;
+        margin-left: 10px;
+    }
+}
+.container-img {
+    position: relative;
+    .bg-square::before {
+        content: " ";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 190px;
+        background-color: black;
+        z-index: -1;
+    }
+    h3 {
+        position: absolute;
+        top: -30px;
+        left: 78%;
+        transform: translateX(-50%);
+        white-space: nowrap;
+        font-size: 1rem;
+        font-weight: bold;
+        color: white;
+    }
+    .img1 {
+        position: relative;
+        width: 85%;
+        height: 300px;
+        margin: 0 auto 35px;
+        background-image: url(https://cdn.pixabay.com/photo/2015/09/22/14/36/replacement-lamp-951781_1280.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    .img2 {
+        position: relative;
+        width: 85%;
+        height: 300px;
+        margin: 0 auto 35px;
+        background-image: url(https://cdn.pixabay.com/photo/2019/10/11/04/25/lamps-4541084_1280.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    .img3 {
+        position: relative;
+        width: 85%;
+        height: 300px;
+        margin: 0 auto 35px;
+        background-image: url(https://cdn.pixabay.com/photo/2015/12/07/20/04/lamp-1081316_1280.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    .img4 {
+        position: relative;
+        width: 85%;
+        height: 300px;
+        margin: 0 auto 35px;
+        background-image: url(https://cdn.pixabay.com/photo/2014/03/12/13/00/crystal-chandelier-286016_1280.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+}
+.investiors {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 0;
+    .card-bg {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        color: #414547;
+        font-size: 21rem;
+        z-index: -1;
+    }
+    .text-investors {
+        position: relative;
+        width: 100%;
+        background-color: black;
+        text-align: center;
+        border-radius: 3px;
+        z-index: 0;
+    }
+    h2 {
+        font-family: "Sansita Swashed", cursive;
+        padding: 10px;
+        color: whitesmoke;
+        font-size: 2rem;
+        text-shadow: 3px 3px 5px black;
+    }
+}
+.show-info {
+    margin-top: 35px;
+    position: relative;
+    .show-info-img {
+        height: 300px;
+        width: 100%;
+        background-image: url(https://cdn.pixabay.com/photo/2020/10/18/09/16/bedroom-5664221_1280.jpg);
+        background-size: cover;
+        background-position: center;
+        z-index: 0;
+    }
+    .show-info-img::before {
+        content: " ";
+        position: absolute;
+        top: -50px;
+        left: 50px;
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+        background-color: $button-color;
+        z-index: -1;
+    }
+    h2 {
+        padding: 0 10px 0 30px;
+        margin: 20px 5px;
+        font-size: 3rem;
+        text-align: start;
+    }
+    .bg-span1::before {
+        content: " ";
+        position: absolute;
+        margin-top: 8px;
+        width: 177px;
+        height: 15px;
+        background-color: $button-color;
+        z-index: -1;
+    }
+    p {
+        padding: 0 10px 0 30px;
+        font-size: 1.4rem;
+        color: #585858;
+        text-align: start;
+        margin-bottom: 40px;
+    }
+    a {
+        margin-left: 30px;
+        padding: 15px 24px;
+        text-align: center;
+        align-items: center;
+        text-decoration: none;
+        color: black;
+        line-height: 35px;
+        background-color: $button-color;
+    }
+}
+.products {
+    position: relative;
+    margin-top: 35px;
+    h2 {
+        padding: 0 10px 0 30px;
+        margin: 20px 5px;
+        font-size: 3rem;
+        text-align: start;
+    }
+    .bg-span1::before {
+        content: " ";
+        position: absolute;
+        margin-top: 8px;
+        width: 103px;
+        height: 15px;
+        background-color: $button-color;
+        z-index: -1;
+    }
+    .p-products {
+        padding: 0 10px 0 30px;
+        font-size: 1.4rem;
+        color: #585858;
+        text-align: start;
+        margin-bottom: 40px;
+    }
+    .products-filter-buttoms {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 10px;
+        .buttons {
+            display: none;
+        }
+        .bg-filters {
+            margin-bottom: 4px;
+            .filters {
+                font-size: 1rem;
+                padding: 3px 10px;
+                white-space: nowrap;
+                background-color: rgb(211, 211, 197);
+                text-decoration: none;
+                color: black;
+                border: 1px solid rgb(53, 52, 52);
+                border-radius: 7px;
+                .icon-filter {
+                    padding-right: 5px;
+                    font-size: 1rem;
+                }
+            }
+        }
+        .updated-p {
+            white-space: nowrap;
+            font-size: 1.2rem;
+            a {
+                position: relative;
+                color: $button-color;
+            }
+            a::before {
+                content: " ";
+                position: absolute;
+                margin-top: 4px;
+                height: 10px;
+                width: 82px;
+                padding-right: 9px;
+                background-color: rgb(117, 116, 116);
+                z-index: -1;
+            }
+        }
+    }
+    .products-img {
+        position: relative;
+        height: 300px;
+        width: 100%;
+        margin-bottom: 10px;
+        background-size: cover;
+        background-position: center;
+    }
+    .img01 {
+        background-image: url(https://cdn.pixabay.com/photo/2020/11/24/11/36/bedroom-5772286_1280.jpg);
+    }
+    .img02 {
+        background-image: url(https://cdn.pixabay.com/photo/2021/11/08/00/30/bedroom-6778193_1280.jpg);
+    }
+    .img03 {
+        background-image: url(https://cdn.pixabay.com/photo/2020/10/18/09/16/bedroom-5664221_1280.jpg);
+    }
+    .d-view-more {
+        text-align: center;
+        margin: 20px;
+        .view-more-btn {
+            padding: 8px 16px;
+            background-color: $button-color;
+            border: 1px solid rgb(184, 184, 184);
+            outline: none;
+        }
+    }
+}
+.contact-img {
+    position: relative;
+    background-attachment: fixed;
+    height: 400px;
+    width: 100%;
+    background-image: url(https://cdn.pixabay.com/photo/2018/10/28/12/37/bedroom-3778695_1280.jpg);
+    background-size: cover;
+    background-position: 90% 90%;
+    z-index: 0;
+    .bg-shadow {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(52, 54, 42, 0.3);
+        z-index: -1;
+    }
+    .contact-column {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100%;
+        h3 {
+            color: whitesmoke;
+            font-size: 2.9rem;
+            padding: 10px 30px;
+            text-align: center;
+            text-shadow: 3px 3px 5px black;
+        }
+        .bg-span {
+            text-shadow: 3px 3px 5px rgb(109, 109, 109);
+        }
+        .bg-span::before {
+            content: " ";
+            position: absolute;
+            margin-top: 8px;
+            width: 200px;
+            height: 21px;
+            background-color: $button-color;
+            z-index: -1;
+        }
+        p {
+            color: rgb(179, 171, 171);
+            font-size: 1.1rem;
+            font-weight: bold;
+            padding: 5px;
+        }
+        .contact-icon {
+            color: $button-color;
+            font-size: 2rem;
+        }
+    }
+}
+.form {
+    position: relative;
+    height: 400px;
+    width: 100%;
+    background-color: black;
+    .form-contact {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 12px;
+        height: 80%;
+        width: 80%;
+        background-color: rgb(240, 240, 240);
+        overflow: hidden;
+        .container {
+            position: absolute;
+            width: 80%;
+            height: 100%;
+            top: 59%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            p {
+                font-size: 0.9rem;
+                // margin: 9px 0 2px 0;
+                font-weight: bold;
+            }
+            .input-contact {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+            .textarea-contact {
+                padding: 15px;
+            }
+            .file-btn {
+                cursor: pointer;
+            }
+            .send-btn {
+                padding: 8px;
+                background-color: $button-color;
+                border: none;
+                outline: none;
+                border-radius: 9px;
+                font-weight: bold;
+                font-size: 1rem;
+                cursor: pointer;
+            }
+        }
+    }
+}
+.opinions {
+    position: relative;
+    padding: 35px 10%;
+    h2 {
+        font-size: 2.9rem;
+        text-align: start;
+        margin-bottom: 15px;
+    }
+    .bg-span {
+        white-space: nowrap;
+    }
+    .bg-span::before {
+        content: " ";
+        position: absolute;
+        margin-top: 8px;
+        width: 157px;
+        height: 17px;
+        background-color: $button-color;
+        z-index: -1;
+    }
+    .p-shadow {
+        text-align: start;
+        color: grey;
+        font-size: 1.3rem;
+        margin-bottom: 35px;
+    }
+    .card-opinions {
+        position: relative;
+        text-align: start;
+        background-color: rgb(243, 237, 237);
+        border-radius: 9px;
+        padding: 30px 25px 90px;
+        margin-bottom: 30px;
+        .card-bottom-opinions {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            padding: 0 25px 5px;
+            .avatar {
+                height: 40px;
+                width: 40px;
+                border-radius: 50%;
+                margin-right: 10px;
+                background-size: cover;
+                background-position: 80% 80%;
+            }
+            .avatar-img {
+                background-image: url(https://cdn.pixabay.com/photo/2018/01/15/07/51/woman-3083387_1280.jpg);
+            }
+            .avatar-img1 {
+                background-image: url(https://cdn.pixabay.com/photo/2019/08/11/18/59/icon-4399701_1280.png);
+                background-position: center;
+            }
+            .avatar-img2 {
+                background-image: url(https://cdn.pixabay.com/photo/2013/07/13/12/07/avatar-159236_1280.png);
+                background-position: center;
+            }
+            .info-avatar {
+                white-space: nowrap;
+                .p-name {
+                    font-weight: bold;
+                    margin-top: 7px;
+                }
+                .p-shadow1 {
+                    margin-top: 3px;
+                    font-size: 1rem;
+                    color: gray;
+                }
+            }
+            .decoration {
+                font-family: "Secular One", sans-serif;
+                margin-left: auto;
+                font-size: 5rem;
+                color: $button-color;
+            }
+        }
+    }
+}
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $button-color;
+    .foot {
+        padding: 15px;
+        white-space: nowrap;
+        span {
+            font-weight: bold;
+        }
+    }
+    .f-icons{
+        cursor: pointer;
+    }
+}
