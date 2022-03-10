@@ -15,8 +15,8 @@ body {
     font-size: 1.6rem;
     font-family: sans-serif;
 }
-.wrapper{
-    max-width: 1300px;
+.wrapper {
+    max-width: 1600px;
     margin: 0 auto;
 }
 .bg-text-img {
@@ -592,7 +592,7 @@ footer {
     }
     // -------- /\ All Classes /\ ------ //
     .hero {
-            height: 350px;
+        height: 350px;
         .bg-span::before {
             margin-top: 9px;
             width: 100%;
@@ -860,15 +860,15 @@ footer {
     }
     // -------- /\ All Classes /\ ------ //
     nav {
-        .btn-nav{
+        .btn-nav {
             display: flex;
             justify-content: center;
             align-items: center;
             margin-left: auto;
-            li{
+            li {
                 list-style: none;
                 padding-top: 15px;
-                a{
+                a {
                     padding: 5px 10px;
                     text-decoration: none;
                     font-size: 1.4rem;
@@ -877,7 +877,7 @@ footer {
                 }
             }
         }
-        .logo{
+        .logo {
             margin-top: 5px;
             font-size: 2rem;
         }
@@ -1154,4 +1154,3 @@ footer {
         }
     }
 }
-
