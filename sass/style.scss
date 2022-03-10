@@ -41,7 +41,6 @@ body {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        // margin-top: 10px;
         font-size: 1.9rem;
         color: whitesmoke;
     }
@@ -402,6 +401,7 @@ nav {
             text-shadow: 3px 3px 5px black;
         }
         .bg-span {
+            white-space: nowrap;
             text-shadow: 3px 3px 5px rgb(109, 109, 109);
         }
         .bg-span::before {
@@ -646,8 +646,10 @@ footer {
     .show-info {
         text-align: center;
         margin-top: 35px;
+        overflow: hidden;
         .show-info-img {
             height: 300px;
+            overflow: hidden;
             width: 100%;
         }
         .show-info-img::before {
@@ -664,6 +666,8 @@ footer {
         }
         .bg-span1::before {
             margin-top: 8px;
+            white-space: nowrap;
+            overflow: hidden;
             width: 177px;
             height: 15px;
         }

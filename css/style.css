@@ -18,7 +18,7 @@ body {
 }
 
 .wrapper {
-  max-width: 1300px;
+  max-width: 1600px;
   margin: 0 auto;
 }
 
@@ -506,6 +506,7 @@ nav .burger-icon {
 }
 
 .contact-img .contact-column .bg-span {
+  white-space: nowrap;
   text-shadow: 3px 3px 5px #6d6d6d;
 }
 
@@ -782,9 +783,11 @@ footer .f-icons {
   .show-info {
     text-align: center;
     margin-top: 35px;
+    overflow: hidden;
   }
   .show-info .show-info-img {
     height: 300px;
+    overflow: hidden;
     width: 100%;
   }
   .show-info .show-info-img::before {
@@ -801,6 +804,8 @@ footer .f-icons {
   }
   .show-info .bg-span1::before {
     margin-top: 8px;
+    white-space: nowrap;
+    overflow: hidden;
     width: 177px;
     height: 15px;
   }
