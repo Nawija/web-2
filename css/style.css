@@ -12,9 +12,14 @@ html {
 }
 
 body {
-  font-size: 1.6rem;
   background-color: #c9c6c6;
+  font-size: 1.6rem;
   font-family: sans-serif;
+}
+
+.wrapper {
+  max-width: 1300px;
+  margin: 0 auto;
 }
 
 .bg-text-img {
@@ -60,7 +65,6 @@ body {
 }
 
 nav {
-  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -71,6 +75,10 @@ nav {
       -ms-flex-pack: justify;
           justify-content: space-between;
   background-color: black;
+}
+
+nav .btn-nav {
+  display: none;
 }
 
 nav .logo {
@@ -103,7 +111,7 @@ nav .burger-icon {
 
 .hero {
   position: relative;
-  height: 65vh;
+  height: 350px;
   width: 100%;
   background-color: black;
   z-index: 0;
@@ -706,5 +714,573 @@ footer .foot span {
 
 footer .f-icons {
   cursor: pointer;
+}
+
+@media (min-width: 576px) {
+  .bg-text-img {
+    padding: 10px;
+    width: 68%;
+    height: 60px;
+    top: 86%;
+    left: 50%;
+  }
+  .bg-text-img .title-info-img {
+    padding: 5px 0;
+    font-size: 1rem;
+  }
+  .bg-text-img .title-img {
+    font-size: 1.9rem;
+  }
+  .hero {
+    height: 350px;
+  }
+  .hero .bg-span::before {
+    margin-top: 9px;
+    width: 100%;
+    height: 5%;
+  }
+  .hero .hero-text {
+    font-size: 3.3rem;
+  }
+  .hero .hero-second-text {
+    font-size: 1.5rem;
+  }
+  .container-img h3 {
+    top: -20px;
+    left: 84%;
+    font-size: 1rem;
+  }
+  .container-img .img1 {
+    width: 85%;
+    height: 300px;
+    margin: 0 auto 35px;
+  }
+  .container-img .img2 {
+    width: 85%;
+    height: 300px;
+    margin: 0 auto 35px;
+  }
+  .container-img .img3 {
+    width: 85%;
+    height: 300px;
+    margin: 0 auto 35px;
+  }
+  .container-img .img4 {
+    width: 85%;
+    height: 300px;
+    margin: 0 auto 35px;
+  }
+  .investiors .card-bg {
+    left: 50%;
+    top: 50%;
+    font-size: 21rem;
+  }
+  .investiors h2 {
+    padding: 10px;
+    font-size: 2rem;
+  }
+  .show-info {
+    text-align: center;
+    margin-top: 35px;
+  }
+  .show-info .show-info-img {
+    height: 300px;
+    width: 100%;
+  }
+  .show-info .show-info-img::before {
+    top: -50px;
+    left: 50px;
+    height: 200px;
+    width: 200px;
+  }
+  .show-info h2 {
+    padding: 0 10px 0 30px;
+    margin: 20px 5px;
+    font-size: 3rem;
+    text-align: center;
+  }
+  .show-info .bg-span1::before {
+    margin-top: 8px;
+    width: 177px;
+    height: 15px;
+  }
+  .show-info p {
+    padding: 0 10px 0 30px;
+    font-size: 1.4rem;
+    margin-bottom: 40px;
+    width: 50%;
+    margin: 0 auto;
+  }
+  .show-info a {
+    margin-left: 30px;
+    padding: 15px 24px;
+    line-height: 35px;
+  }
+  .products {
+    margin-top: 35px;
+  }
+  .products h2 {
+    text-align: center;
+    padding: 0 10px 0 30px;
+    margin: 20px 5px;
+    font-size: 3rem;
+  }
+  .products .bg-span1::before {
+    margin-top: 8px;
+    width: 103px;
+    height: 15px;
+  }
+  .products .p-products {
+    padding: 0 10px 0 30px;
+    font-size: 1.4rem;
+    margin-bottom: 40px;
+  }
+  .products .products-filter-buttoms {
+    padding: 0 10px;
+  }
+  .products .products-filter-buttoms .buttons {
+    display: none;
+  }
+  .products .products-filter-buttoms .bg-filters {
+    margin-bottom: 4px;
+  }
+  .products .products-filter-buttoms .bg-filters .filters {
+    font-size: 1rem;
+    padding: 3px 10px;
+  }
+  .products .products-filter-buttoms .bg-filters .filters .icon-filter {
+    padding-right: 5px;
+    font-size: 1rem;
+  }
+  .products .products-filter-buttoms .updated-p {
+    font-size: 1.2rem;
+  }
+  .products .products-filter-buttoms .updated-p a::before {
+    margin-top: 4px;
+    height: 10px;
+    width: 82px;
+    padding-right: 9px;
+  }
+  .products .products-img {
+    height: 300px;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .products .d-view-more {
+    margin: 20px;
+  }
+  .products .d-view-more .view-more-btn {
+    padding: 8px 16px;
+  }
+  .contact-img {
+    height: 400px;
+    width: 100%;
+  }
+  .contact-img .bg-shadow {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .contact-img .contact-column h3 {
+    font-size: 2.9rem;
+    padding: 10px 30px;
+  }
+  .contact-img .contact-column .bg-span::before {
+    margin-top: 8px;
+    width: 200px;
+    height: 21px;
+  }
+  .contact-img .contact-column p {
+    font-size: 1.1rem;
+    padding: 5px;
+  }
+  .contact-img .contact-column .contact-icon {
+    font-size: 2rem;
+  }
+  .form {
+    height: 400px;
+    width: 100%;
+  }
+  .form .form-contact {
+    top: 50%;
+    left: 50%;
+    height: 80%;
+    width: 80%;
+  }
+  .form .form-contact .container {
+    width: 80%;
+    height: 100%;
+    top: 59%;
+    left: 50%;
+  }
+  .form .form-contact .container p {
+    font-size: 0.9rem;
+  }
+  .form .form-contact .container .input-contact {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .form .form-contact .container .textarea-contact {
+    padding: 15px;
+  }
+  .form .form-contact .container .send-btn {
+    padding: 8px;
+    font-size: 1rem;
+  }
+  .opinions {
+    padding: 35px 10%;
+  }
+  .opinions h2 {
+    font-size: 2.9rem;
+    margin-bottom: 15px;
+  }
+  .opinions .bg-span::before {
+    margin-top: 8px;
+    width: 157px;
+    height: 17px;
+  }
+  .opinions .p-shadow {
+    font-size: 1.3rem;
+    margin-bottom: 35px;
+  }
+  .opinions .card-opinions {
+    padding: 30px 25px 90px;
+    margin-bottom: 30px;
+  }
+  .opinions .card-opinions .card-bottom-opinions {
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    padding: 0 25px 5px;
+  }
+  .opinions .card-opinions .card-bottom-opinions .avatar {
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+  }
+  .opinions .card-opinions .card-bottom-opinions .info-avatar .p-name {
+    margin-top: 7px;
+  }
+  .opinions .card-opinions .card-bottom-opinions .info-avatar .p-shadow1 {
+    margin-top: 3px;
+    font-size: 1rem;
+  }
+  .opinions .card-opinions .card-bottom-opinions .decoration {
+    font-size: 5rem;
+  }
+  footer .foot {
+    padding: 15px;
+  }
+}
+
+@media (min-width: 768px) {
+  .bg-text-img {
+    padding: 10px;
+    width: 68%;
+    height: 60px;
+    top: 86%;
+    left: 50%;
+  }
+  .bg-text-img .title-info-img {
+    padding: 5px 0;
+    font-size: 1rem;
+  }
+  .bg-text-img .title-img {
+    font-size: 1.9rem;
+  }
+  nav .btn-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: auto;
+  }
+  nav .btn-nav li {
+    list-style: none;
+    padding-top: 15px;
+  }
+  nav .btn-nav li a {
+    padding: 5px 10px;
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: #e5be68;
+    cursor: pointer;
+  }
+  nav .logo {
+    margin-top: 5px;
+    font-size: 2rem;
+  }
+  nav .icon-logo-nav {
+    top: 5px;
+    left: 5px;
+    font-size: 2.3rem;
+  }
+  nav .burger {
+    display: none;
+  }
+  .hero {
+    max-height: 390px;
+  }
+  .hero .bg-span::before {
+    margin-top: 16px;
+    width: 239px;
+    height: 15px;
+  }
+  .hero .hero-text {
+    padding: 40px 15%;
+    font-size: 3.8rem;
+  }
+  .hero .hero-second-text {
+    padding: 0 15%;
+    margin-bottom: 7%;
+    font-size: 1.6rem;
+  }
+  .hero .hero-info-text {
+    padding: 0 15%;
+  }
+  .hero span ion-icon {
+    margin-top: -6px;
+    font-size: 2.2rem;
+    margin-left: 10px;
+  }
+  .container-img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .container-img h3 {
+    top: -18px;
+    left: 85%;
+    font-size: 1.1rem;
+  }
+  .container-img .img1 {
+    width: 45%;
+    height: 300px;
+    margin: 0 auto 35px;
+  }
+  .container-img .img2 {
+    width: 45%;
+    height: 300px;
+    margin: 0 auto 35px;
+  }
+  .container-img .img3 {
+    width: 45%;
+    height: 300px;
+    margin: 0 auto 35px;
+  }
+  .container-img .img4 {
+    width: 45%;
+    height: 300px;
+    margin: 0 auto 35px;
+  }
+  .investiors .card-bg {
+    left: 50%;
+    top: 50%;
+    font-size: 21rem;
+  }
+  .investiors h2 {
+    padding: 10px;
+    font-size: 2rem;
+  }
+  .show-info {
+    margin-top: 35px;
+  }
+  .show-info .show-info-img {
+    height: 300px;
+    width: 100%;
+  }
+  .show-info .show-info-img::before {
+    top: -50px;
+    left: 50px;
+    height: 200px;
+    width: 200px;
+  }
+  .show-info h2 {
+    padding: 0 10px 0 30px;
+    margin: 20px 5px;
+    font-size: 3rem;
+  }
+  .show-info .bg-span1::before {
+    margin-top: 8px;
+    width: 177px;
+    height: 15px;
+  }
+  .show-info p {
+    padding: 0 10px 0 30px;
+    font-size: 1.4rem;
+    margin-bottom: 40px;
+  }
+  .show-info a {
+    margin-left: 30px;
+    padding: 15px 24px;
+    line-height: 35px;
+  }
+  .products {
+    margin-top: 35px;
+  }
+  .products h2 {
+    padding: 0 10px 0 30px;
+    margin: 20px 5px;
+    font-size: 3rem;
+  }
+  .products .bg-span1::before {
+    margin-top: 8px;
+    width: 103px;
+    height: 15px;
+  }
+  .products .p-products {
+    padding: 0 10px 0 30px;
+    font-size: 1.4rem;
+    margin-bottom: 40px;
+  }
+  .products .products-filter-buttoms {
+    padding: 0 10px;
+  }
+  .products .products-filter-buttoms .buttons {
+    display: none;
+  }
+  .products .products-filter-buttoms .bg-filters {
+    margin-bottom: 4px;
+  }
+  .products .products-filter-buttoms .bg-filters .filters {
+    font-size: 1rem;
+    padding: 3px 10px;
+  }
+  .products .products-filter-buttoms .bg-filters .filters .icon-filter {
+    padding-right: 5px;
+    font-size: 1rem;
+  }
+  .products .products-filter-buttoms .updated-p {
+    font-size: 1.2rem;
+  }
+  .products .products-filter-buttoms .updated-p a::before {
+    margin-top: 4px;
+    height: 10px;
+    width: 82px;
+    padding-right: 9px;
+  }
+  .products .products-img {
+    height: 300px;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .products .d-view-more {
+    margin: 20px;
+  }
+  .products .d-view-more .view-more-btn {
+    padding: 8px 16px;
+  }
+  .contact-img {
+    height: 400px;
+    width: 100%;
+  }
+  .contact-img .bg-shadow {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .contact-img .contact-column h3 {
+    font-size: 2.9rem;
+    padding: 10px 30px;
+  }
+  .contact-img .contact-column .bg-span::before {
+    margin-top: 8px;
+    width: 200px;
+    height: 21px;
+  }
+  .contact-img .contact-column p {
+    font-size: 1.1rem;
+    padding: 5px;
+  }
+  .contact-img .contact-column .contact-icon {
+    font-size: 2rem;
+  }
+  .form {
+    height: 400px;
+    width: 100%;
+  }
+  .form .form-contact {
+    top: 30%;
+    left: 50%;
+    height: 110%;
+    width: 50%;
+  }
+  .form .form-contact .container {
+    width: 80%;
+    height: 100%;
+    top: 59%;
+    left: 50%;
+  }
+  .form .form-contact .container p {
+    font-size: 0.9rem;
+  }
+  .form .form-contact .container .input-contact {
+    width: 100%;
+    margin-bottom: 40px;
+    padding: 5px;
+  }
+  .form .form-contact .container .textarea-contact {
+    padding: 15px;
+  }
+  .form .form-contact .container .send-btn {
+    padding: 8px;
+    font-size: 1rem;
+  }
+  .opinions {
+    padding: 35px 10%;
+  }
+  .opinions h2 {
+    text-align: center;
+    font-size: 2.9rem;
+    margin-bottom: 15px;
+  }
+  .opinions .bg-span::before {
+    margin-top: 8px;
+    width: 157px;
+    height: 17px;
+  }
+  .opinions .p-shadow {
+    font-size: 1.3rem;
+    margin: 0 auto 35px;
+    text-align: center;
+    width: 50%;
+  }
+  .opinions .card-opinions {
+    padding: 30px 25px 90px;
+    margin-bottom: 30px;
+  }
+  .opinions .card-opinions .card-bottom-opinions {
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    padding: 0 25px 5px;
+  }
+  .opinions .card-opinions .card-bottom-opinions .avatar {
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+  }
+  .opinions .card-opinions .card-bottom-opinions .info-avatar .p-name {
+    margin-top: 7px;
+  }
+  .opinions .card-opinions .card-bottom-opinions .info-avatar .p-shadow1 {
+    margin-top: 3px;
+    font-size: 1rem;
+  }
+  .opinions .card-opinions .card-bottom-opinions .decoration {
+    font-size: 5rem;
+  }
+  footer .foot {
+    padding: 15px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
